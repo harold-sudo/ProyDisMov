@@ -4,6 +4,6 @@ data class ProfileModel(
     val pathUrl: String,
     val name: String,
     val email: String,
-    val cellphone: String,
+  //  val cellphone: String,
     val summary: String
 )

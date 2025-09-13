@@ -65,10 +65,10 @@ fun ProfileScreen(
                     style = MaterialTheme.typography.bodyMedium
                 )
 
-                Text(
-                    text = st.profile.cellphone,
-                    style = MaterialTheme.typography.bodyMedium
-                )
+              //  Text(
+                //    text = st.profile.cellphone,
+                  //  style = MaterialTheme.typography.bodyMedium
+                //)
 
                 Text(
                     text = st.profile.summary,

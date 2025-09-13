@@ -9,7 +9,7 @@ class ProfileRepository: IProfileRepository {
             ProfileModel(
                 name = "Homero J. Simpson",
                 email = "homero.simpson@springfieldmail.com",
-                cellphone = "+1 (939) 555‑7422",
+                //cellphone = "+1 (939) 555‑7422",
                 pathUrl = "https://www.viaempresa.cat/uploads/s1/43/99/69/homer.jpg",
                 summary = "Ciudadano de Springfield y dedicado inspector de seguridad en la Planta Nuclear."
             )

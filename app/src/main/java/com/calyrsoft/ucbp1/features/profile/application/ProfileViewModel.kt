@@ -32,7 +32,7 @@ class ProfileViewModel(
             val resultProfile = profileUseCase.invoke()
             resultProfile.fold(
                 onSuccess = {
-                   _state.value = ProfileUiState.Success(it)
+                    _state.value = ProfileUiState.Success(it)
                 },
                 onFailure = {
                     _state.value = ProfileUiState.Error(it.message.toString())

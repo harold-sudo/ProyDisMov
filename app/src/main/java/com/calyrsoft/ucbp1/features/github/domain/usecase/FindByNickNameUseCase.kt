@@ -8,7 +8,7 @@ class FindByNickNameUseCase(
     val repository: IGithubRepository
 ) {
     suspend fun invoke(nickname: String) : Result<UserModel>  {
-        delay(2000)
+        delay(5000)
         return repository.findByNick(nickname)
     }
 }
