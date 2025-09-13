@@ -15,14 +15,15 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import org.koin.androidx.compose.koinViewModel
-
+import com.calyrsoft.ucbp1.features.github.gitalias.GitaliasUI
 @Composable
 fun GithubScreen(
     modifier: Modifier = Modifier,
     vm: GithubViewModel = koinViewModel()
 ) {
     var nickname by remember { mutableStateOf("") }
-    val state by vm.uiState.collectAsState()
+    // Aquí se corrige el nombre de la variable
+    val state by vm.state.collectAsState()
 
     OutlinedButton(onClick = { vm.fetchAlias(nickname) }) {
         Text(text = "Buscar Alias")
@@ -40,9 +41,9 @@ fun GithubScreen(
         }
         is GithubViewModel.GithubStateUI.Success -> {
             Column {
-                Text(st.user.name) // Accedemos a la propiedad "name" del modelo de usuario
+                Text(st.github.name) // Accedemos a la propiedad "name" del modelo de usuario
                 AsyncImage(
-                    model = st.user.avatarUrl,
+                    model = st.github.avatarUrl,
                     contentDescription = null,
                     modifier = Modifier.size(size = 100.dp),
                     contentScale = ContentScale.Crop,

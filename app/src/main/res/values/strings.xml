@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">ucbp1</string>
     <string name="login_title">Login</string>
+    <string name="gitalias_input">Gitalias</string>">
+    <string name="gitalias_btn_find">Buscar</string>"
+    <string name="error_network">No hay conexión a internet</string>
+    <string name="error_server">Error del servidor</string>
+    <string name="error_not_found">No se encontraron resultados</string>
+    <string name="error_empty_response">Respuesta vacía</string>
+    <string name="error_unknown">Error desconocido</string>
 </resources>

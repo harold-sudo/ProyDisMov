@@ -16,7 +16,6 @@ composeBom = "2024.09.00"
 retrofit = "3.0.0"
 navcompose = "2.9.3"
 animationCoreLint = "1.9.0"
-converterGson = "3.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,7 +41,7 @@ koin-androidx-navigation = { module = "io.insert-koin:koin-androidx-navigation",
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navcompose"}
 androidx-animation-core-lint = { group = "androidx.compose.animation", name = "animation-core-lint", version.ref = "animationCoreLint" }
-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
