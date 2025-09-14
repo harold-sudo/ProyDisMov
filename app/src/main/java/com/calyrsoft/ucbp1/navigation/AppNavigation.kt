@@ -23,6 +23,9 @@ fun AppNavigation() {
             LoginScreen(
                 onForgotPasswordClicked = {
                     navController.navigate(Screen.ForgotPassword.route)
+                },
+                onLoginSuccess = {
+                    navController.navigate(Screen.Home.route) // Navega a la pantalla Home
                 }
             )
         }
