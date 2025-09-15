@@ -11,6 +11,9 @@ import com.calyrsoft.ucbp1.features.profile.application.ProfileViewModel
 import com.calyrsoft.ucbp1.features.profile.data.repository.ProfileRepository
 import com.calyrsoft.ucbp1.features.profile.domain.repository.IProfileRepository
 import com.calyrsoft.ucbp1.features.profile.domain.usecase.GetProfileUseCase
+import com.calyrsoft.ucbp1.features.signup.data.repository.SignupRepository
+import com.calyrsoft.ucbp1.features.signup.domain.usecase.SignUpUseCase
+import com.calyrsoft.ucbp1.features.signup.presentation.SignUpViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
@@ -26,4 +29,8 @@ val appModule = module {
     single<IProfileRepository> { ProfileRepository() }
     factory { GetProfileUseCase(get()) }
     viewModel { ProfileViewModel(get()) }
+
+    single {SignupRepository() }
+    factory { SignUpUseCase(get()) }
+    viewModel { SignUpViewModel(get()) }
 }

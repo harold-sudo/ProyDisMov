@@ -24,7 +24,8 @@ import androidx.annotation.DrawableRes
 fun LoginScreen(
     vm: LoginViewModel = koinViewModel(),
     onForgotPasswordClicked: () -> Unit,
-    onLoginSuccess: () -> Unit // Nuevo callback para la navegación
+    onLoginSuccess: () -> Unit,
+    onSignUpClicked: () -> Unit
 ) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
@@ -166,12 +167,9 @@ fun LoginScreen(
                         color = Color.White.copy(alpha = 0.7f),
                         fontSize = 14.sp
                     )
-                    Text(
-                        "Regístrate",
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold,
-                        fontSize = 14.sp
-                    )
+                    Button(onClick = onSignUpClicked) {
+                        Text("¿No tienes cuenta? Regístrate")
+                    }
                 }
             }
 
