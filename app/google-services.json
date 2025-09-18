@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "755917627925",
+    "project_id": "prog-dis-hsl",
+    "storage_bucket": "prog-dis-hsl.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755917627925:android:70ee7c41a72135f85d241c",
+        "android_client_info": {
+          "package_name": "com.calyrsoft.ucbp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2ZtDSAH69Lb2cYVARkj5CjbhaT2HwoJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
