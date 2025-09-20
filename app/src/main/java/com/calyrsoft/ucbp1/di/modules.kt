@@ -1,5 +1,10 @@
 package com.calyrsoft.ucbp1.di
 
+import DollarRepository
+import DollarViewModel
+import FetchDollarUseCase
+import IDollarRepository
+import com.calyrsoft.ucbp1.features.dollar.data.datasource.RealTimeRemoteDataSource
 import com.calyrsoft.ucbp1.features.github.data.repository.GithubRepository
 import com.calyrsoft.ucbp1.features.github.domain.repository.IGithubRepository
 import com.calyrsoft.ucbp1.features.github.domain.usecase.FindByNickNameUseCase
@@ -26,4 +31,9 @@ val appModule = module {
     single<IProfileRepository> { ProfileRepository() }
     factory { GetProfileUseCase(get()) }
     viewModel { ProfileViewModel(get()) }
+
+    single { RealTimeRemoteDataSource() }
+    single<IDollarRepository> { DollarRepository() }
+    factory { FetchDollarUseCase(get()) }
+    viewModel{ DollarViewModel(get()) }
 }
