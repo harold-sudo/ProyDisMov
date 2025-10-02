@@ -8,6 +8,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.calyrsoft.ucbp1.features.forgot_password.presentation.ForgotPasswordScreen
 import com.calyrsoft.ucbp1.features.github.presentation.GithubScreen
+import com.calyrsoft.ucbp1.features.home.presentation.HomeScreen
 import com.calyrsoft.ucbp1.features.login.presentation.LoginScreen
 import com.calyrsoft.ucbp1.features.profile.application.ProfileScreen
 import com.calyrsoft.ucbp1.features.signup.presentation.SignUpScreen
@@ -20,7 +21,7 @@ fun AppNavigation() {
 
     NavHost(
         navController = navController,
-        startDestination = Screen.Login.route
+        startDestination = Screen.Home.route
     ) {
         // Login
         composable(Screen.Login.route) {
@@ -65,7 +66,8 @@ fun AppNavigation() {
 
         // Home
         composable(Screen.Home.route) {
-            // Aquí tu pantalla principal
+            HomeScreen()
+
         }
 
         // Profile

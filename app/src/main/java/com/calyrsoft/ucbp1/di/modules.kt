@@ -4,6 +4,11 @@ import com.calyrsoft.ucbp1.features.github.data.repository.GithubRepository
 import com.calyrsoft.ucbp1.features.github.domain.repository.IGithubRepository
 import com.calyrsoft.ucbp1.features.github.domain.usecase.FindByNickNameUseCase
 import com.calyrsoft.ucbp1.features.github.presentation.GithubViewModel
+import com.calyrsoft.ucbp1.features.home.data.repository.HomeRepository
+import com.calyrsoft.ucbp1.features.home.domain.model.HomeModel
+import com.calyrsoft.ucbp1.features.home.domain.repository.IHomeRepository
+import com.calyrsoft.ucbp1.features.home.domain.usecase.HomeUseCase
+import com.calyrsoft.ucbp1.features.home.presentation.HomeViewModel
 import com.calyrsoft.ucbp1.features.login.data.repository.LoginRepository
 import com.calyrsoft.ucbp1.features.login.domain.usecase.LoginUseCase
 import com.calyrsoft.ucbp1.features.login.presentation.LoginViewModel
@@ -33,4 +38,9 @@ val appModule = module {
     single {SignupRepository() }
     factory { SignUpUseCase(get()) }
     viewModel { SignUpViewModel(get()) }
+
+    single < IHomeRepository> { HomeRepository() }
+    factory { HomeUseCase(get()) }
+    viewModel { HomeViewModel(get()) }
+
 }
