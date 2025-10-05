@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.calyrsoft.ucbp1"
+    namespace = "com.hlasoftware.focus"
     compileSdk = 36
 
     defaultConfig {
@@ -55,9 +55,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
+    debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation(libs.retrofit)
     implementation(platform(libs.androidx.compose.bom))
-    implementation("androidx.compose.material3:material3")
+    implementation(libs.androidx.material3)
     implementation(libs.converter.gson)
     implementation (libs.koin.android)
     implementation (libs.koin.androidx.navigation)
@@ -65,8 +67,8 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.coil.network)
     implementation(libs.androidx.navigation.compose)
-    implementation("io.coil-kt:coil-compose:2.6.0")
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation(libs.coil.kt.coil.compose)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson.v290)
 
 }

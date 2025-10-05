@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814347385351",
+    "project_id": "focus-24c0a",
+    "storage_bucket": "focus-24c0a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814347385351:android:27658f5c1cc60be6b248a2",
+        "android_client_info": {
+          "package_name": "com.calyrsoft.ucbp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC83uQIH2Oaj0K0N-qM2Phtxr-wGoD2aJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
